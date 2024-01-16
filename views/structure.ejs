@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the number</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <h1><%= level %></h1>
+    <h3>Tentatives: [<%= locals.tentatives %>]</h3>
+    <form method="POST" action="/submit">
+        <div class="container">
+            <div class="NumberInASpace">
+                <input id="spaceToInsert" type="text" name="numberInserted">
+            </div>
+            <div>
+                <input id="buttonToCheck" type="submit" value="Check">
+            </div>
+        </div>
+    </form>
+    <div>
+        <form method="GET" action="/">
+            <input id="buttonLevels" type="submit" value="Levels">
+        </form>
+    </div>
+</body>
+</html>

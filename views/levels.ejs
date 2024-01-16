@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the number</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Welcome to Guess the Number Game!</h1>
+    <div class="container1">
+        <h2>Choose a level!</h2>
+        <div>
+            <ol>
+                <li>
+                    <form action="/game1" method="POST">
+                        <input class="levels itensProperties" id="lvl1" type="submit" value="Easy">
+                    </form>
+                </li>
+                <li>
+                    <form action="/game2" method="POST">
+                        <input class="levels itensProperties" id="lvl2" type="submit" value="Medium">
+                    </form>
+                </li>
+                <li>
+                    <form action="/game3" method="POST">
+                        <input class="levels itensProperties" id="lvl3" type="submit" value="Hard">
+                    </form>
+                </li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
